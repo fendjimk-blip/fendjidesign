@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FENDJI DESIGN</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#090909;
+ color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:22px;
+ text-align:center;
+ border-bottom:1px solid #c9a34a;
+}
+.logo{
+ font-size:28px;
+ font-weight:bold;
+ letter-spacing:3px;
+ color:#e2bd69;
+}
+nav{padding:15px;text-align:center}
+nav a{color:white;margin:10px;text-decoration:none}
+button,.btn{
+ background:linear-gradient(120deg,#f5dc9b,#bd8b32);
+ color:#111;
+ border:0;
+ padding:13px 22px;
+ border-radius:25px;
+ font-weight:bold;
+ text-decoration:none;
+ display:inline-block;
+ cursor:pointer;
+}
+.hero{
+ text-align:center;
+ padding:85px 20px;
+ background:radial-gradient(#493719,#090909 70%);
+}
+h1{font-size:45px}
+.gold{color:#e2bd69}
+p{color:#bbb;line-height:1.7}
+section{padding:45px 20px;text-align:center}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:18px;
+ max-width:1000px;
+ margin:auto;
+}
+.card{
+ background:#171717;
+ border:1px solid #94702e;
+ border-radius:15px;
+ padding:25px;
+}
+.card h3{color:#e2bd69}
+.card a{margin-top:12px}
+.gallery{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+ gap:15px;
+ max-width:900px;
+ margin:auto;
+}
+.sample{
+ padding:45px 10px;
+ background:#1a1a1a;
+ border:1px dashed #d7ad55;
+ border-radius:12px;
+ color:#e2bd69;
+}
+footer{
+ padding:25px;
+ text-align:center;
+ border-top:1px solid #94702e;
+ color:#aaa;
+}
+#lang{margin:10px}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">FENDJI DESIGN</div>
+<nav>
+<a href="#home">Accueil</a>
+<a href="#services">Services</a>
+<a href="#gallery">Galerie</a>
+<a href="#contact">Contact</a>
+<button id="lang" onclick="changeLang()">Kreyòl</button>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>FENDJI <span class="gold">DESIGN</span></h1>
+<p data-fr="Donnez vie à vos idées avec nos créations personnalisées."
+data-ht="Bay lide ou yo lavi avèk kreyasyon pèsonalize nou yo.">
+Donnez vie à vos idées avec nos créations personnalisées.
+</p>
+<a class="btn" href="https://wa.me/50933990459">
+Commander sur WhatsApp
+</a>
+</section>
+
+<section id="services">
+<h2 class="gold" data-fr="NOS SERVICES" data-ht="SÈVIS NOU YO">NOS SERVICES</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎨 Graphic Design</h3>
+<p data-fr="Logos et créations graphiques."
+data-ht="Logo ak konsepsyon grafik.">Logos et créations graphiques.</p>
+<a class="btn" href="https://wa.me/50933990459?text=Bonjour%2C%20je%20veux%20un%20logo.">Commander</a>
+</div>
+
+<div class="card">
+<h3>🖼️ Tableaux</h3>
+<p data-fr="Tableaux personnalisés."
+data-ht="Tablo pèsonalize.">Tableaux personnalisés.</p>
+<a class="btn" href="https://wa.me/50933990459?text=Je%20veux%20un%20tableau.">Commander</a>
+</div>
+
+<div class="card">
+<h3>☕ Tasses</h3>
+<p data-fr="Tasses personnalisées."
+data-ht="Tas pèsonalize.">Tasses personnalisées.</p>
+<a class="btn" href="https://wa.me/50933990459?text=Je%20veux%20une%20tasse.">Commander</a>
+</div>
+
+<div class="card">
+<h3>🥤 Tumblers</h3>
+<p data-fr="Tumblers personnalisés."
+data-ht="Tumbler pèsonalize.">Tumblers personnalisés.</p>
+<a class="btn" href="https://wa.me/50933990459?text=Je%20veux%20un%20tumbler.">Commander</a>
+</div>
+
+<div class="card">
+<h3>👕 Maillots</h3>
+<p data-fr="Maillots personnalisés."
+data-ht="Maillot pèsonalize.">Maillots personnalisés.</p>
+<a class="btn" href="https://wa.me/50933990459?text=Je%20veux%20un%20maillot.">Commander</a>
+</div>
+
+<div class="card">
+<h3>📢 Flyers</h3>
+<p data-fr="Publicité et affiches."
+data-ht="Piblisite ak afich.">Publicité et affiches.</p>
+<a class="btn" href="https://wa.me/50933990459?text=Je%20veux%20un%20flyer.">Commander</a>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="gold" data-fr="NOS RÉALISATIONS" data-ht="TRAVAY NOU YO">NOS RÉALISATIONS</h2>
+<div class="gallery">
+<div class="sample">FENDJI DESIGN</div>
+<div class="sample">CREATIVE DESIGN</div>
+<div class="sample">PERSONNALISATION</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="gold" data-fr="CONTACTEZ-NOUS" data-ht="KONTAKTE NOU">CONTACTEZ-NOUS</h2>
+<p>WhatsApp : +509 3399-0459</p>
+<a class="btn" href="https://wa.me/50933990459">
+CONTACT WHATSAPP
+</a>
+</section>
+
+<footer>
+© 2026 FENDJI DESIGN — Tous droits réservés.
+</footer>
+
+<script>
+let current="fr";
+
+function changeLang(){
+ current=current==="fr"?"ht":"fr";
+
+ document.querySelectorAll("[data-fr]").forEach(el=>{
+ el.textContent=el.getAttribute("data-"+current);
+ });
+
+ document.getElementById("lang").textContent=
+ current==="fr"?"Kreyòl":"Français";
+}
+</script>
+
+</body>
+  </html>
